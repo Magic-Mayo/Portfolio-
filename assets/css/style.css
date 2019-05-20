@@ -87,7 +87,6 @@ ul {
     margin: 100px auto;
     background: #ffffff;
     border: #dddddd 1px solid;
-    min-height: calc(100vh - 125px)   
 }
 
 h1 {
@@ -100,8 +99,8 @@ h1 {
 #footer {
     background: #666666;
     bottom: 0;
-    width: 100%;
-    height: 75px;
+    width: 100vw;
+    height: 7.5vh;
     border-top: #4aaaa5 8px solid;
 }
 
@@ -133,7 +132,7 @@ footer {
     padding: 0px 15px 75px;
 }
 
-#row1 {
+.row1 {
     display: flex;
     flex-flow: row nowrap;
     flex: 1;
@@ -142,7 +141,7 @@ footer {
     margin: 0 auto 25px;
 }
 
-#row2 {
+.row2 {
     display: flex;
     flex-flow: row nowrap;
     flex: 1;
@@ -151,7 +150,7 @@ footer {
     margin: 0 auto 25px;
 }
 
-#row3 {
+.row3 {
     display: flex;
     flex-flow: row nowrap;
     flex: 1;
@@ -160,13 +159,13 @@ footer {
     margin: 0 auto 25px;
 }
 
-#row1 img {
+.row1 img {
     position: relative;
     height: 240px;
     width: 360px;
 }
 
-#row1 p {
+.row1 p {
     position: absolute;
     background: #4aaaa5;
     width: 360px;
@@ -177,11 +176,11 @@ footer {
     line-height: 50px;
 }
 
-#row2 img {
+.row2 img {
     position: relative;
 }
 
-#row2 p {
+.row2 p {
     position: absolute;
     background: #4aaaa5;
     width: 360px;
@@ -192,12 +191,12 @@ footer {
     line-height: 50px;
 }
 
-#row3 img {
+.row3 img {
     position: relative;
 }
 
 
-#row3 p {
+.row3 p {
     position: absolute;
     background: #4aaaa5;
     width: 360px;
@@ -253,6 +252,31 @@ img:hover {
         clear: both;
         position: static;
     }
+
+    .row img {
+        width: 35vw;
+        height: auto;
+    }
+
+    .row p {
+        width: 35vw;
+        height: auto;
+    }
+
+    .row1 {
+        width:auto;
+        justify-content: space-around;
+    }
+
+    .row2 {
+        width:auto;
+        justify-content: space-around;
+    }
+
+    .row3 {
+        width:auto;
+        justify-content: space-around;
+    }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 641px) {
@@ -262,7 +286,8 @@ img:hover {
     }
     #container {
         margin-top: 25px;
-        width: 90vw
+        width: 90vw;
+        height: auto;
     }
 
     ul {
@@ -281,4 +306,29 @@ img:hover {
     #home {
         left: 5vw;
         text-align: center;
+    }
+
+    .row img {
+        width: 35vw;
+        height: auto;
+    }
+
+    .row p {
+        width: 35vw;
+        height: auto;
+    }
+
+    .row1 {
+        width:auto;
+        justify-content: space-around;
+    }
+
+    .row2 {
+        width:auto;
+        justify-content: space-around;
+    }
+
+    .row3 {
+        width:auto;
+        justify-content: space-around;
     }
