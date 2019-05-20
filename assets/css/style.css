@@ -217,51 +217,48 @@ img:hover {
     opacity: 1;
 }
 
-@media only screen and (max-width: 640px) {
+textarea {
+    resize: none;
+}
+
+@media screen and (max-width:980px) {
     body {
+        width: 100vw;
         overflow-x: hidden;
-        max-width: 100vw;
     }
+
     #container {
-        width: 90vw;
+        position: static;
+        float: left;
+        width: 70vw;
+        margin-left: 25px;
     }
-
+    
+    #me {
+        width: 40vw;
+        height: auto;
+    }
     ul {
-        padding: 15px 0;
-        position: absolute;
-        background: #dddddd;
-        width: 100vw;
-        justify-content: center;
-        top: 76px;
+        float: none;
+        justify-content: flex-end;
+        width: 95vw;
     }
-
-    nav {
-        position: static;
-        width: 100vw;
-        opacity: 1.0;
-        margin-bottom: 20px;
-    }
-
-    #home {
-        padding: 0;
-        width: 100vw;
-        text-align: center;
-    }
-
-    .intro {
+    #footer {
         clear: both;
-        position: static;
     }
 
     .row img {
-        flex-direction: column;
-        width: 70vw;
+        width: 30vw;
         height: auto;
     }
 
     .row p {
-        width: 70vw;
+        width: 30vw;
         height: auto;
+    }
+
+    .row {
+        flex-flow: row nowrap;
     }
 
     .row1 {
@@ -280,14 +277,22 @@ img:hover {
     }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 641px) {
+
+@media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
         width: 100vw;
     }
+
     #container {
         margin-top: 25px;
         width: 90vw;
+        height: auto;
+        float: none;
+    }
+
+    #me {
+        width: 50vw;
         height: auto;
     }
 
@@ -333,3 +338,82 @@ img:hover {
         width:auto;
         justify-content: space-around;
     }
+}
+
+@media screen and (max-width: 640px) {
+        body {
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+        #container {
+            width: 90vw;
+            float: none;
+            margin-left: auto;
+        }
+        
+        #me {
+            width: 100%;
+            height: auto;
+        }
+    
+        ul {
+            padding: 15px 0;
+            position: absolute;
+            background: #dddddd;
+            width: 100vw;
+            justify-content: center;
+            top: 76px;
+        }
+    
+        nav {
+            position: static;
+            width: 100vw;
+            opacity: 1.0;
+            margin-bottom: 75px;
+        }
+    
+        #home {
+            position: static;
+            width: 100vw;
+            text-align: center;
+        }
+    
+        .intro {
+            clear: both;
+            position: static;
+        }
+    
+        .row img {
+            flex-direction: column;
+            width: 82.95vw;
+            height: auto;
+        }
+    
+        .row p {
+            width: 82.95vw;
+            height: auto;
+        }
+    
+        .row1 {
+            flex-direction: column;
+            width:auto;
+            justify-content: space-around;
+            margin-bottom: auto;
+        }
+
+    
+        .row2 {
+            flex-direction: column;
+            width:auto;
+            justify-content: space-around;
+            margin-bottom: auto;
+        }
+    
+        .row3 {
+            flex-direction: column;
+            width:auto;
+            justify-content: space-around;
+            margin-bottom: auto;
+        }
+    }
+    
