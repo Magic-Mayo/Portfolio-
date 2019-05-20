@@ -220,13 +220,13 @@ img:hover {
 
 @media only screen and (max-width: 640px) {
     #container {
-    width: 100%;
+    width: 90vw;
     }
 
     ul {
         position: absolute;
         background: #dddddd;
-        width: 100%;
+        width: 100vw;
         justify-content: center;
         top: 76px;
     }
@@ -239,7 +239,7 @@ img:hover {
     }
 
     #home {
-        width: 100%;
+        width: 100vw;
         background: #4aaaa5;
         text-align: center;
     }
