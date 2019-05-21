@@ -220,12 +220,25 @@ textarea {
         width: 100vw;
         overflow-x: hidden;
     }
+    @keyframes container {
+        0% {left: -700px; position: absolute}
+        50% {left: 0}
+        95% {left: 150px}
+        100% {float: left; position: static;}
+    }
+
+    @keyframes footer {
+        0% {position: fixed; bottom: -100px;}
+        95% {position: fixed; bottom: -100px;}
+    }
+
 
     #container {
         position: static;
         float: left;
         width: 70vw;
         margin-left: 25px;
+        animation: container 2s linear;
     }
     
     #me {
@@ -239,6 +252,7 @@ textarea {
     }
     #footer {
         clear: both;
+        animation: footer 1s linear;
     }
 
     .row img {
