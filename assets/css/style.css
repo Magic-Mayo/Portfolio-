@@ -278,11 +278,17 @@ textarea {
         width: 100vw;
     }
 
+    @keyframes container {
+        0% {opacity: 0;}
+        100% {opacity: 1.0;}
+    }
+
     #container {
         margin-top: 25px;
         width: 90vw;
         height: auto;
         float: none;
+        animation: container 1.25s linear;
     }
 
     #me {
