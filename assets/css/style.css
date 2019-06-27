@@ -172,6 +172,7 @@ footer {
 
 .row2 img {
     position: relative;
+    max-width: 360px;
 }
 
 .row2 p {
