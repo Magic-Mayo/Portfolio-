@@ -1,9 +1,13 @@
 body {
     /* Background pattern from Toptal Subtle Patterns */
     background-image: url("../images/retina_wood_@2X.png");
-    background-attachment: scroll;
-    margin: 0 auto;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    min-height: 100%;
 }
 
 nav {
@@ -81,14 +85,19 @@ ul {
     margin: 0 auto;
 }
 
-#container {
+.container-fluid {
     width: 960px;
-    height: auto;
+    min-height: 100%;
     margin: 100px auto;
     padding: 0 15px 10px;
     background: #ffffff;
     border: #dddddd 1px solid;
+    /* padding-bottom: 50px; */
 }
+
+/* .content {
+    padding-bottom: 50px
+} */
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -97,24 +106,19 @@ h1 {
     padding: 0 0 8px 0;
 }
 
-#footer {
+.footer {
+    line-height: 62px;
     background: #666666;
-    bottom: 0;
     width: 100vw;
     height: 7.5vh;
     border-top: #4aaaa5 8px solid;
-}
-
-footer {
-    margin-top: 50px;
     text-align: center;
-    position: ;
+    /* margin-top: -58px */
 }
 
 #me {
     float: left;
     padding: 0 10px 0 0;
-    opacity: 1;
 }
 
 .intro {
@@ -124,88 +128,34 @@ footer {
 
 .img {
     border: #777777 2px solid;
-}
-
-.row1 {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 1;
-    width: 800px;
-    justify-content: space-between;
-    margin: 0 auto 25px;
-}
-
-.row2 {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 1;
-    justify-content: space-between;
-    width: 800px;
-    margin: 0 auto 25px;
-}
-
-.row3 {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 1;
-    justify-content: center;
-    width: 800px;
-    margin: 0 auto 25px;
-}
-
-.row1 img {
+    width: 360px;
+    height: 240px;
     position: relative;
+    padding: 0;
+}
+
+.img col {
     height: 240px;
     width: 360px;
 }
 
-.row1 p {
+.name {
     position: absolute;
     background: #4aaaa5;
-    width: 360px;
+    width: 356px;
     text-align: center;
     font-size: 1.4em;
     color: #ffffff;
     margin: -70px 0 0 2px;
-    line-height: 50px;
-}
-
-.row2 img {
-    position: relative;
-    max-width: 360px;
-}
-
-.row2 p {
-    position: absolute;
-    background: #4aaaa5;
-    width: 360px;
-    text-align: center;
-    font-size: 1.4em;
-    color: #ffffff;
-    margin: -70px 0 0 2px;
-    line-height: 50px;
-}
-
-.row3 img {
-    position: relative;
-}
-
-
-.row3 p {
-    position: absolute;
-    background: #4aaaa5;
-    width: 360px;
-    text-align: center;
-    font-size: 1.4em;
-    color: #ffffff;
-    margin: -70px 0 0 2px;
-    line-height: 50px;
+    line-height: 52px;
 }
 
 img {
     opacity: .45;
     transition-delay: .1s;
     transition-duration: 1s;
+    width: 360px;
+    height: 240px;
 }
 
 img:hover {
@@ -266,24 +216,6 @@ textarea {
         height: auto;
     }
 
-    .row {
-        flex-flow: row nowrap;
-    }
-
-    .row1 {
-        width:auto;
-        justify-content: space-around;
-    }
-
-    .row2 {
-        width:auto;
-        justify-content: space-around;
-    }
-
-    .row3 {
-        width:auto;
-        justify-content: space-around;
-    }
 }
 
 
@@ -363,7 +295,7 @@ textarea {
 
         @keyframes container {
             0% {top: -2000px; position: absolute; z-index: -1}
-            5% {top: -1900px; position: absolute; z-index: -1}
+            /* 5% {top: -1900px; position: absolute; z-index: -1}
             10% {top: -1800px; position: absolute; z-index: -1}
             15% {top: -1700px; position: absolute; z-index: -1}
             20% {top: -1600px; position: absolute; z-index: -1}
@@ -380,7 +312,7 @@ textarea {
             75% {top: -500px; position: absolute; z-index: -1}
             80% {top: -400px; position: absolute; z-index: -1}
             85% {top: -300px; position: absolute; z-index: -1}
-            90% {top: -200px; position: absolute; z-index: -1}
+            90% {top: -200px; position: absolute; z-index: -1} */
             95% {top: -100px; position: absolute; z-index: -1}
             100% {float:none}
         }
@@ -411,6 +343,7 @@ textarea {
         #footer {
             animation: footer .75s linear;
         }
+
         #container {
             width: 90vw;
             float: none;
