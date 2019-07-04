@@ -85,7 +85,7 @@ ul {
     margin: 0 auto;
 }
 
-.container-fluid {
+.container-fluid, .container {
     width: 960px;
     min-height: 100%;
     margin: 100px auto;
@@ -94,10 +94,6 @@ ul {
     border: #dddddd 1px solid;
     /* padding-bottom: 50px; */
 }
-
-/* .content {
-    padding-bottom: 50px
-} */
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -184,7 +180,7 @@ textarea {
     }
 
 
-    #container {
+    .container-fluid, .container {
         position: static;
         float: left;
         width: 70vw;
@@ -201,7 +197,7 @@ textarea {
         justify-content: flex-end;
         width: 95vw;
     }
-    #footer {
+    .footer {
         clear: both;
         animation: footer 1s linear;
     }
@@ -211,11 +207,9 @@ textarea {
         height: auto;
     }
 
-    .row p {
-        width: 30vw;
-        height: auto;
+    .name {
+        width: 33.4%
     }
-
 }
 
 
@@ -230,11 +224,10 @@ textarea {
         100% {opacity: 1.0;}
     }
 
-    #container {
+    .container-fluid, .container {
         margin-top: 25px;
         width: 90vw;
         height: auto;
-        float: none;
         animation: container 1.25s linear;
     }
 
@@ -261,29 +254,8 @@ textarea {
         text-align: center;
     }
 
-    .row img {
-        width: 35vw;
-        height: auto;
-    }
-
-    .row p {
-        width: 35vw;
-        height: auto;
-    }
-
-    .row1 {
-        width:auto;
-        justify-content: space-around;
-    }
-
-    .row2 {
-        width:auto;
-        justify-content: space-around;
-    }
-
-    .row3 {
-        width:auto;
-        justify-content: space-around;
+    .name {
+        width: 43.3%;
     }
 }
 
@@ -294,63 +266,39 @@ textarea {
         }
 
         @keyframes container {
-            0% {top: -2000px; position: absolute; z-index: -1}
-            /* 5% {top: -1900px; position: absolute; z-index: -1}
-            10% {top: -1800px; position: absolute; z-index: -1}
-            15% {top: -1700px; position: absolute; z-index: -1}
-            20% {top: -1600px; position: absolute; z-index: -1}
-            25% {top: -1500px; position: absolute; z-index: -1}
-            30% {top: -1400px; position: absolute; z-index: -1}
-            35% {top: -1300px; position: absolute; z-index: -1}
-            40% {top: -1200px; position: absolute; z-index: -1}
-            45% {top: -1100px; position: absolute; z-index: -1}
-            50% {top: -1000px; position: absolute; z-index: -1}
-            55% {top: -900px; position: absolute; z-index: -1}
-            60% {top: -800px; position: absolute; z-index: -1}
-            65% {top: -700px; position: absolute; z-index: -1}
-            70% {top: -600px; position: absolute; z-index: -1}
-            75% {top: -500px; position: absolute; z-index: -1}
-            80% {top: -400px; position: absolute; z-index: -1}
-            85% {top: -300px; position: absolute; z-index: -1}
-            90% {top: -200px; position: absolute; z-index: -1} */
-            95% {top: -100px; position: absolute; z-index: -1}
-            100% {float:none}
+            0% {opacity: 0;}
+            100% {opacity: 1.0;}
+        }
+        
+        .gallows {
+            position: absolute;
+            top: 30%;
         }
 
-        @keyframes footer {
-            0% {position: fixed; bottom: 0;}
-            5% {position: fixed; bottom: 0;}
-            10% {position: fixed; bottom: 0;}
-            15% {position: fixed; bottom: 0;}
-            20% {position: fixed; bottom: 0;}
-            25% {position: fixed; bottom: 0;}
-            30% {position: fixed; bottom: 0;}
-            35% {position: fixed; bottom: 0;}
-            40% {position: fixed; bottom: 0;}
-            45% {position: fixed; bottom: 0;}
-            50% {position: fixed; bottom: 0;}
-            55% {position: fixed; bottom: 0;}
-            60% {position: fixed; bottom: 0;}
-            65% {position: fixed; bottom: 0;}
-            70% {position: fixed; bottom: 0;}
-            75% {position: fixed; bottom: 0;}
-            80% {position: fixed; bottom: 0;}
-            85% {position: fixed; bottom: 0;}
-            90% {position: fixed; bottom: 0;}
-            95% {position: fixed; bottom: 0;}
+        .star-wars {
+            position: absolute;
+            top: 57%;
         }
 
-        #footer {
-            animation: footer .75s linear;
+        .parks {
+            position: absolute;
+            top: 84%;
         }
 
-        #container {
+        .train {
+            position: absolute;
+            top: 111%;
+        }
+
+        .content {
+            /* position: relative; */
+            height: auto;
+        }
+
+        .container-fluid, .container {
+            /* position: relative; */
             width: 90vw;
-            float: none;
-            margin-left: auto;
-            animation-name: container;
-            animation-duration: .75s;
-            animation-timing-function: linear;
+            animation: container 1.25s linear;
         }
         
         #me {
@@ -385,38 +333,11 @@ textarea {
             position: static;
         }
     
-        .row img {
+        .img {
             flex-direction: column;
-            width: 82.95vw;
+            /* width: 82.95vw; */
             height: auto;
             justify-content: center;
-        }
-    
-        .row p {
-            width: 82.95vw;
-            height: auto;
-        }
-    
-        .row1 {
-            flex-direction: column;
-            width:auto;
-            justify-content: space-around;
-            margin-bottom: auto;
-        }
-
-    
-        .row2 {
-            flex-direction: column;
-            width:auto;
-            justify-content: space-around;
-            margin-bottom: auto;
-        }
-    
-        .row3 {
-            flex-direction: column;
-            width:auto;
-            justify-content: space-around;
-            margin-bottom: auto;
         }
     }
     
