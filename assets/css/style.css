@@ -1,167 +1,118 @@
 body {
     /* Background pattern from Toptal Subtle Patterns */
-    background-image: url("../images/retina_wood_@2X.png");
+    /* background-image: url("../images/retina_wood_@2X.png");
     background-attachment: fixed;
     background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden;
     min-height: 100%;
 }
 
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 nav {
+    background-color: #253b02;
     position: fixed;
-    width: 100%;
-    margin: 0 auto;
-    background: #ffffff;
-    height: 75px;
-    border-bottom: #dddddd 1px solid;
     top: 0;
-    opacity: .85;
-    z-index: 500;
+    width: 100%;
+    text-align: center;
+    height: 75px;
+    z-index: 100;
+    margin-bottom: 50px
 }
 
-.active {
-    color: #4aaaa5;
+.header ul {
+    list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: #777777;
-    transition-delay: .1s;
-    transition-duration: .75s;
+.header li a {
+    color: #dddddd;
 }
 
-ul a:hover {
-    background: #4aaaa5;
-    border: #777777 .5px solid;
-    color: #ffffff;
-    padding: 8px;
-    font-size: 1.5em;
+.header {
+    color: #dddddd;
 }
 
 #home {
     position: absolute;
-    background: #4aaaa5;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    float: left;
-    padding: 0 8px;
-    margin: 0;
-    line-height: 76px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    color: #dddddd;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 28px 3px;
-    display: flex;
-    flex-direction: row;
-    float: right;
+.about {
+    font-size: 1.25rem;
+    top: 50%;
+    position: absolute;
+    left: 30%;
+    transform: translate(-30%, -50%)
 }
 
 #about {
-    color: #777777;
-    border-right: #777777 1px solid;
-    padding: 0 5px;
+    height: 530px
+}
+
+.portfolio {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-70%, -50%)
+}
+.contact {
+    display: none;
+}
+
+.container-fluid {
+    position: absolute;
+    width: 100%;
+}
+
+.about-content {
+    position: absolute;
+    top: 400px;
+    background-color: aliceblue;
 }
 
 #portfolio {
-    color: #777777;
-    border-right: #777777 1px solid;
-    padding: 0 5px;
-}
-
-#contact {
-    color: #777777;
-    border-right: #777777;
-    padding: 0 5px;
-}
-
-#header {
-    position: relative;
-    width: 960px;
-    margin: 0 auto;
-}
-
-.container-fluid, .container {
-    width: 960px;
-    min-height: 100%;
-    margin: 100px auto;
-    padding: 0 15px 10px;
-    background: #ffffff;
-    border: #dddddd 1px solid;
-    /* padding-bottom: 50px; */
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #4aaaa5;
-    border-bottom: #dddddd 3px solid;
-    padding: 0 0 8px 0;
-}
-
-.footer {
-    line-height: 62px;
-    background: #666666;
-    width: 100vw;
-    height: 7.5vh;
-    border-top: #4aaaa5 8px solid;
-    text-align: center;
-    /* margin-top: -58px */
-}
-
-#me {
-    float: left;
-    padding: 0 10px 0 0;
-}
-
-.intro {
-    padding: 0 10px;
-    line-height: 1.4em;
-}
-
-.img {
-    border: #777777 2px solid;
-    width: 360px;
-    height: 240px;
-    position: relative;
-    padding: 0;
-}
-
-.img col {
-    height: 240px;
-    width: 360px;
-}
-
-.name {
     position: absolute;
-    background: #4aaaa5;
-    width: 356px;
-    text-align: center;
-    font-size: 1.4em;
-    color: #ffffff;
-    margin: -70px 0 0 2px;
-    line-height: 52px;
+    top: 1200px;
+    background-color: beige;
+    width: 100%;
 }
 
-img {
-    opacity: .45;
-    transition-delay: .1s;
-    transition-duration: 1s;
-    width: 360px;
-    height: 240px;
+#portfolio-content {
+    left: 3%;
 }
 
-img:hover {
-    opacity: 1;
+.portfolio-header {
+    position: absolute;
+    top: 0;
+    left: 50px;
 }
 
-textarea {
-    resize: none;
+.portfolio-content img {
+    width: 480px;
+    height: 360px;;
+}
+.footer {
+    position: sticky;
+    bottom: 0;
 }
 
+
+.folio-gallows img {
+    left: 50px;
+}
+.gallows-para {
+    
+}
 @media screen and (max-width:980px) {
     body {
         width: 100vw;
