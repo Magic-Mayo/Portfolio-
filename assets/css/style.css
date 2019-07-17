@@ -7,12 +7,17 @@ body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden;
-    min-height: 100%;
+    height: 100%;
 }
 
 .parallax-window {
-    min-height: 400px;
-    background: transparent;
+    height: 500px;
+    background-image: url('../images/LakeMorena.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: transparent; */
+    background-position: center;
 }
 
 nav {
@@ -23,7 +28,7 @@ nav {
     text-align: center;
     height: 75px;
     z-index: 100;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 .header ul {
@@ -55,7 +60,12 @@ nav {
 }
 
 #about {
-    height: 530px
+    position: relative;
+    /* height: 650px; */
+    background-color: #253b02;
+    /* top: 400px; */
+    opacity: .6;
+    padding-top: 75px;
 }
 
 .portfolio {
@@ -75,19 +85,27 @@ nav {
 }
 
 .about-content {
+    color: #dddddd;
     position: absolute;
-    top: 400px;
-    background-color: aliceblue;
+    /* top: 400px; */
+    text-align: center;
+    font-size: 1.1rem;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 #portfolio {
     position: absolute;
     top: 1200px;
-    background-color: beige;
+    /* background-color: beige; */
     width: 100%;
+    padding-top: 25px;
 }
 
-#portfolio-content {
+.portfolio-content {
+    position: sticky;
+    top: 10%;
     left: 3%;
 }
 
@@ -97,22 +115,49 @@ nav {
     left: 50px;
 }
 
-.portfolio-content img {
+.folio img {
     width: 480px;
     height: 360px;;
 }
+
+/* .folio-gallows, .folio-parks, .folio-train, .folio-wars {
+    position: relative;
+} */
+
+.folio-gallows img, .folio-parks img {
+    left: 50px;
+}
+
+.folio-wars img, .wars-para {
+    top: 400px;
+}
+
+.folio-parks img {
+    top: 800px;
+}
+
+.folio-train img {
+    top: 1200px;
+}
+
+.folio-wars img, .folio-train img {
+    right: 50px;
+}
+
+.gallows-para {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    top: 25px;
+    width: 500px;
+    right: 100px;
+    word-wrap: break-word;
+}
+
 .footer {
     position: sticky;
     bottom: 0;
 }
 
-
-.folio-gallows img {
-    left: 50px;
-}
-.gallows-para {
-    
-}
 @media screen and (max-width:980px) {
     body {
         width: 100vw;
