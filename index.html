@@ -42,7 +42,7 @@
         </nav>
             
         <!-- <div class="container-fluid"> -->
-                <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/LakeMorena.jpg">
+                <div class="parallax-window parallax-one" data-parallax="scroll" data-image-src="assets/images/LakeMorena.jpg"></div>
                     <div id="about">
                     <div class="about-content">
                         <h1>About Me</h1>
@@ -92,7 +92,7 @@
                         </p>
                     </div>
                     </div>        
-                </div>
+                    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/LakeMorena.jpg"></div>
 
                 <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/20170401_140210.jpg"></div>
                 <div id="portfolio" class="mt-5 pt-5">
@@ -100,38 +100,40 @@
                         <h1 class="portfolio-header">Portfolio</h1>
     
                     <div class="folio-gallows">
-                        <a class='folio gallows position-relative d-inline-flex' href="https://magic-mayo.github.io/Word-Guess-Game/" title="Word Gallows" target="_blank">
-                            <img src="assets/images/gallows.jpg">
-                            <p class="gallows-para">This was my first real project with javascript and designing/building a webpage on my own.  This was a challenge for me not only because I like to choose more difficult tasks to take on but also because there was a huge learning curve as I went into this knowing very little.  In the end I found it turned out better than I had initially hoped!</p>
+                        <a class='folio gallows position-relative d-flex' href="https://magic-mayo.github.io/Word-Guess-Game/" title="Word Gallows" target="_blank">
+                            <img class="position-absolute" src="assets/images/gallows.jpg">
                         </a>
+                        
+                        <p class="gallows-para position-absolute"><h2>Word Gallows</h2>This was my first real project with javascript and designing/building a webpage on my own.  This was a challenge for me not only because I like to choose more difficult tasks to take on but also because there was a huge learning curve as I went into this knowing very little.  In the end I found it turned out better than I had initially hoped!</p>
                     </div>
         
                     <div class="folio-wars">
-                        <a class="folio star-wars position-relative" href="https://magic-mayo.github.io/Star-Wars-RPG/" title="Star Wars" target="_self">
+                        <a class="folio star-wars position-relative d-flex" href="https://magic-mayo.github.io/Star-Wars-RPG/" title="Star Wars" target="_blank">
                             <img class="position-absolute" src="assets/images/1200px-Star_Wars_Logo.svg.png" max-width="">
-                            <p class="position-absolute">Star Wars Game</p>
+                            <p class="position-absolute wars-para">Star Wars Game</p>
                         </a>
                     </div>
         
                     <div class="folio-parks">
-                        <a class="folio parks" href="https://magic-mayo.github.io/TriviaGame/" title="Trivia" target="_self">
-                            <img class="img col" src="assets/images/trivia.jpg">
-                            <p class="name">Parks and Rec Trivia</p>
+                        <a class="folio parks d-flex position-relative" href="https://magic-mayo.github.io/TriviaGame/" title="Trivia" target="_blank">
+                            <img class="position-absolute" src="assets/images/trivia.jpg">
+                            <p class="position-absolute parks-para">Parks and Rec Trivia</p>
                         </a>
                     </div>
         
                     <div class="folio-train">
-                        <a class="folio train" href="https://magic-mayo.github.io/Choo-Choo-Choose-Your-Destination/" title="Train Scheduler" target="_self">
-                            <img class="img col" src="assets/images/train.jpg">
-                            <p class="name">Train Scheduler</p>
+                        <a class="folio train d-flex position-relative" href="https://magic-mayo.github.io/Choo-Choo-Choose-Your-Destination/" title="Train Scheduler" target="_blank">
+                            <img class="position-absolute" src="assets/images/train.jpg">
+                            <p class="position-absolute train-para">Train Scheduler</p>
                         </a>
                     </div>
                 </div>
-        </div>
+            </div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/20170401_140210.jpg"></div>
     </div>
     <!-- <footer class="footer">Copyright &copy;</footer> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/parallax.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/parallax.js"></script> -->
 </body>
 
 </html>
