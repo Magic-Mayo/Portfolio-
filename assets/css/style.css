@@ -1,23 +1,12 @@
 body {
-    /* Background pattern from Toptal Subtle Patterns */
-    /* background-image: url("../images/retina_wood_@2X.png");
-    background-attachment: fixed;
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat; */
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden;
     height: 100%;
-}
-
-.parallax-window {
-    height: 500px;
     background-image: url('../images/LakeMorena.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background: transparent; */
-    background-position: center;
 }
 
 nav {
@@ -61,11 +50,11 @@ nav {
 
 #about {
     position: relative;
-    /* height: 650px; */
-    background-color: #253b02;
-    /* top: 400px; */
-    opacity: .6;
-    padding-top: 75px;
+    height: auto;
+    background-color: rgba(256, 256, 256, .6);
+    top: 700px;
+    padding: 75px 50px;
+    width: 100%;
 }
 
 .portfolio {
@@ -82,37 +71,30 @@ nav {
 .container-fluid {
     position: absolute;
     width: 100%;
+    padding: 0;
 }
 
 .about-content {
-    color: #dddddd;
-    position: absolute;
-    /* top: 400px; */
     text-align: center;
-    font-size: 1.1rem;
-    width: 85%;
-    left: 50%;
-    transform: translateX(-50%)
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    opacity: .8;
 }
 
 #portfolio {
-    position: absolute;
-    top: 1200px;
-    /* background-color: beige; */
+    position: relative;
+    top: 1420px;
+    background-color: rgba(256, 256, 256, .6);
     width: 100%;
     padding-top: 25px;
+    /* opacity: .6; */
 }
 
 .portfolio-content {
-    position: sticky;
-    top: 10%;
+    /* position: relative; */
+    text-align: center;
+    top: 20%;
     left: 3%;
-}
-
-.portfolio-header {
-    position: absolute;
-    top: 0;
-    left: 50px;
 }
 
 .folio img {
@@ -120,37 +102,48 @@ nav {
     height: 360px;;
 }
 
-/* .folio-gallows, .folio-parks, .folio-train, .folio-wars {
-    position: relative;
-} */
-
 .folio-gallows img, .folio-parks img {
     left: 50px;
 }
 
-.folio-wars img, .wars-para {
-    top: 400px;
+.folio-wars {
+    top: 500px;
 }
 
-.folio-parks img {
-    top: 800px;
+.folio-parks {
+    top: 1000px;
 }
 
-.folio-train img {
-    top: 1200px;
+.folio-train {
+    top: 1500px;
 }
 
 .folio-wars img, .folio-train img {
     right: 50px;
 }
 
+.folio-gallows img {
+    left: 5%;
+}
+
+.folio-gallows {
+    position: relative;
+    top: 20%;
+    width: 100%;
+}
+
+.gallows-header {
+    right: 20%;
+}
+
 .gallows-para {
-    font-size: 1.2rem;
+    text-align: center;
+    font-size: 1.5rem;
     line-height: 2rem;
-    top: 25px;
-    width: 500px;
-    right: 100px;
-    word-wrap: break-word;
+    top: 50px;
+    width: 700px;
+    right: 10%;
+    /* word-wrap: break-word; */
 }
 
 .footer {
