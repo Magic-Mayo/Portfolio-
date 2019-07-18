@@ -5,10 +5,23 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden;
     height: 100%;
-    background-image: url('../images/LakeMorena.jpg');
+    background-image: url('../../images/LakeMorena.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+svg {
+    height: 50px;
+    width: 50px;        
+}
+
+a {
+    font-style: none;
+    color: #000000;
+    &:hover {
+        color: #000000;
+        text-decoration: none;
+    }
 }
 
 nav {
@@ -35,11 +48,6 @@ nav {
             margin: 0;
         }
         
-        svg {
-            height: 50px;
-            width: 50px;        
-        }
-
         .github {
             top: 15%;
             position: absolute;
@@ -113,6 +121,15 @@ nav {
             line-height: 1.8rem;
             font-size: 1.2rem;
             opacity: .8;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            .note {
+                width: 60%;
+                font-weight: bold;
+                align-items: center;
+            }
         }
     }
 
@@ -120,7 +137,7 @@ nav {
         position: relative;
         top: 1720px;
         background-color: rgba(256, 256, 256, .6);
-        padding-top: 25px;
+        padding: 25px 0;
     
         .portfolio-content {
             text-align: center;
@@ -130,11 +147,15 @@ nav {
         
             img {
                 width: 480px;
-                height: 360px;;
+                height: 360px;
+                opacity: .6;
+                &:hover {
+                    opacity: 1;
+                }
             }
 
             div {
-                margin: 30px 0;
+                margin: 60px 0;
                 border-top: #777777 groove 6px;
                 padding: 30px 0 0;
             }
@@ -144,12 +165,58 @@ nav {
                 font-size: 1.5rem;
                 line-height: 2rem;
                 width: 700px;
+                color: #000000;
+                cursor: text;
+                margin: 0;
             }
+
+            .desc-header {
+                font-style: oblique;
+                font-size: 2rem;
+            }
+
+            .icon {
+                position: absolute;
+                margin-top: 20px;
+                background: white;
+                border-radius: 100%;
+                fill: black;
+                svg:hover {
+                    border-radius: 100%;
+                    background: #a80404;
+                }
+            }
+
+            .folio-gallows .icon,
+            .folio-parks .icon,
+            .folio-life .icon {
+                left: 19%;
+            }
+
+            .git-life {
+                position: absolute;
+                left: 23.5%;
+                bottom: .3%
+            }
+
+            .folio-wars .icon,
+            .folio-train .icon {
+                right: 19%;
+            }
+
+            .folio-wars,
+            .folio-train {
+                span {
+                    position: absolute;
+                    right: 18%;
+                }                
+            }
+
         }
     }
 }
 
 .footer {
-    position: sticky;
+    position: absolute;
     bottom: 0;
 }
