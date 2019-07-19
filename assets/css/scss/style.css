@@ -141,9 +141,12 @@ nav .header ul li a {
   opacity: 1;
 }
 .container-fluid #portfolio .portfolio-content div {
-  margin: 60px 0;
-  border-top: #777777 groove 6px;
-  padding: 30px 0 0;
+  margin: 30px 0;
+  border: #777777 groove 6px;
+  padding: 30px 0;
+}
+.container-fluid #portfolio .portfolio-content .folio-life {
+  border-bottom: #777777 groove 6px;
 }
 .container-fluid #portfolio .portfolio-content p {
   text-align: center;
@@ -172,25 +175,30 @@ nav .header ul li a {
 .container-fluid #portfolio .portfolio-content .folio-gallows .icon,
 .container-fluid #portfolio .portfolio-content .folio-parks .icon,
 .container-fluid #portfolio .portfolio-content .folio-life .icon {
-  left: 19%;
+  right: 24%;
+  bottom: 2%;
 }
-.container-fluid #portfolio .portfolio-content .git-life {
+.container-fluid #portfolio .portfolio-content .folio-gallows span,
+.container-fluid #portfolio .portfolio-content .folio-parks span,
+.container-fluid #portfolio .portfolio-content .folio-life span {
   position: absolute;
-  left: 23.5%;
-  bottom: 0.3%;
+  right: 28%;
+  bottom: 4%;
 }
 .container-fluid #portfolio .portfolio-content .folio-wars .icon,
 .container-fluid #portfolio .portfolio-content .folio-train .icon {
-  right: 19%;
+  left: 24%;
+  bottom: 2%;
 }
 .container-fluid #portfolio .portfolio-content .folio-wars span,
 .container-fluid #portfolio .portfolio-content .folio-train span {
   position: absolute;
-  right: 18%;
+  left: 28%;
+  bottom: 4%;
 }
 
 .footer {
-  position: sticky;
+  position: absolute;
   bottom: 0;
 }
 
