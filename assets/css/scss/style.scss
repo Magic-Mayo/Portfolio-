@@ -1,0 +1,234 @@
+$ltwhite: #dddddd;
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: url('../../images/LakeMorena.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+svg {
+    height: 50px;
+    width: 50px;        
+}
+
+a {
+    font-style: none;
+    color: #000000;
+    &:hover {
+        color: #000000;
+        text-decoration: none;
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 60%;
+    text-align: center;
+    height: 75px;
+    z-index: 100;
+    margin-bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    
+    .header {
+        color: $ltwhite;
+        
+        #home {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            color: #dddddd;
+            margin: 0;
+        }
+        
+        .github {
+            top: 15%;
+            position: absolute;
+            background: black;
+            border-radius: 100%;
+            fill: white;
+            left: 7%;
+            &:hover {
+                fill: white;
+                background: #a80404            
+            }
+        }
+        
+        .linkedin {
+            position: absolute;
+            background: white;
+            border-radius: 20%;
+            fill: black;
+            top: 15%;
+            right: 7%;
+            &:hover {
+                fill: #0077b5;
+            }
+        }        
+
+        ul {
+            list-style: none;
+    
+            .about {
+                font-size: 1.25rem;
+                top: 50%;
+                position: absolute;
+                left: 20%;
+                transform: translate(-20%, -50%)
+            }
+
+            .portfolio {
+                font-size: 1.25rem;
+                position: absolute;
+                top: 50%;
+                right: 20%;
+                transform: translate(20%, -50%)
+            }
+
+            .contact {
+                display: none;
+            }
+            
+            li a{
+                color: $ltwhite;
+            }
+        }
+    }
+}
+
+.container-fluid {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+
+    #about {
+        position: relative;
+        height: auto;
+        background-color: rgba(256, 256, 256, .6);
+        top: 800px;
+        padding: 75px 50px;
+        width: 100%;
+
+        .about-content {
+            text-align: center;
+            line-height: 1.8rem;
+            font-size: 1.2rem;
+            opacity: .8;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            .note {
+                width: 60%;
+                font-weight: bold;
+                align-items: center;
+            }
+        }
+    }
+
+    #portfolio {
+        position: relative;
+        top: 1720px;
+        background-color: rgba(256, 256, 256, .6);
+        padding: 25px 0;
+    
+        .portfolio-content {
+            text-align: center;
+            top: 20%;
+            left: 3%;
+            height: 105%;
+        
+            img {
+                width: 480px;
+                height: 360px;
+                opacity: .6;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            div {
+                margin: 30px 0;
+                border: #777777 groove 6px;
+                padding: 30px 0;
+            }
+
+            .folio-life {
+                border-bottom: #777777 groove 6px;
+                // padding-bottom: 60px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                width: 700px;
+                color: #000000;
+                cursor: text;
+                margin: 0;
+            }
+
+            .desc-header {
+                font-style: oblique;
+                font-size: 2rem;
+            }
+
+            .icon {
+                position: absolute;
+                margin-top: 20px;
+                background: white;
+                border-radius: 100%;
+                fill: black;
+                svg:hover {
+                    border-radius: 100%;
+                    background: #a80404;
+                }
+            }
+
+            .folio-gallows .icon,
+            .folio-parks .icon,
+            .folio-life .icon {
+                right: 24%;
+                bottom: 2%;
+            }
+
+            .folio-gallows,
+            .folio-parks,
+            .folio-life {
+                span {
+                    position: absolute;
+                    right: 28%;
+                    bottom: 4%;
+                }
+            }
+
+            .folio-wars .icon,
+            .folio-train .icon {
+                left: 24%;
+                bottom: 2%;
+            }
+
+            .folio-wars,
+            .folio-train {
+                span {
+                    position: absolute;
+                    left: 28%;
+                    bottom: 4%;
+                }                
+            }
+
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
