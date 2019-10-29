@@ -3,7 +3,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   overflow-x: hidden;
   height: 100%;
-  background-image: url("../../images/LakeMorena.jpg");
+  background-image: url("../../images/LakeMorena.png");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,6 +138,7 @@ nav .header ul li a {
   opacity: 0.6;
 }
 .container-fluid #portfolio .portfolio-content img:hover {
+  cursor: pointer;
   opacity: 1;
 }
 .container-fluid #portfolio .portfolio-content div {
@@ -186,12 +187,14 @@ nav .header ul li a {
   bottom: 4%;
 }
 .container-fluid #portfolio .portfolio-content .folio-wars .icon,
-.container-fluid #portfolio .portfolio-content .folio-train .icon {
+.container-fluid #portfolio .portfolio-content .folio-train .icon,
+.container-fluid #portfolio .portfolio-content .folio-liri .icon {
   left: 24%;
   bottom: 2%;
 }
 .container-fluid #portfolio .portfolio-content .folio-wars span,
-.container-fluid #portfolio .portfolio-content .folio-train span {
+.container-fluid #portfolio .portfolio-content .folio-train span,
+.container-fluid #portfolio .portfolio-content .folio-liri span {
   position: absolute;
   left: 28%;
   bottom: 4%;
